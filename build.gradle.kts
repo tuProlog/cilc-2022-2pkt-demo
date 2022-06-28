@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    kotlin("jvm") version "1.7.0"
 }
 
 allprojects {
@@ -11,15 +11,15 @@ allprojects {
 
 dependencies {
     // Align versions of all Kotlin components
-    implementation(platform(libs.kotlin.bom))
+    implementation("org.jetbrains.kotlin", "kotlin-bom", "1.7.0")
     // Use the Kotlin JDK 8 standard library.
-    implementation(libs.kotlin.stdlib.jvm)
+    implementation("org.jetbrains.kotlin", "kotlin-stdlib-jdk8", "1.7.0")
 
     // Import all 2P-Kt modules
-    implementation(libs.tuprolog.full)
+    implementation("it.unibo.tuprolog", "full-jvm", "0.20.9")
 
     // Use the Kotlin test library.
-    testImplementation(libs.kotlin.test)
+    testImplementation("org.jetbrains.kotlin", "kotlin-test", "1.7.0")
     // Use the Kotlin JUnit integration.
-    testImplementation(libs.kotlin.test.junit)
+    testImplementation("org.jetbrains.kotlin", "kotlin-test-junit", "1.7.0")
 }
