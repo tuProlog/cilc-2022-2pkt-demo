@@ -6,18 +6,20 @@ allprojects {
     repositories {
         mavenCentral()
     }
+    group = "it.unibo.tuprolog.demo"
 }
 
 dependencies {
-    implementation(libs.tuprolog.ide)
-    implementation(libs.tuprolog.repl)
-}
+    // Align versions of all Kotlin components
+    implementation(platform(libs.kotlin.bom))
+    // Use the Kotlin JDK 8 standard library.
+    implementation(libs.kotlin.stdlib.jvm)
 
-listOf("gui", "repl").forEach {
-    task<JavaExec>("runTuprolog${it.toUpperCase()}") {
-        group = "tuprolog"
-        mainClass.set("it.unibo.tuprolog.ui.$it.Main")
-        sourceSets.main { classpath = runtimeClasspath }
-        standardInput = System.`in`
-    }
+    // Import all 2P-Kt modules
+    implementation(libs.tuprolog.full)
+
+    // Use the Kotlin test library.
+    testImplementation(libs.kotlin.test)
+    // Use the Kotlin JUnit integration.
+    testImplementation(libs.kotlin.test.junit)
 }
