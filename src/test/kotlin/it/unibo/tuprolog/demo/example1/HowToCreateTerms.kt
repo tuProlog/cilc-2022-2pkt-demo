@@ -30,7 +30,7 @@ class HowToCreateTerms {
     }
 
     @Test
-    fun `terms can be created via kotlin dsl`() {
+    fun `terms can be created via kotlin DSL`() {
         val person = prolog {
             "giovanni"("first_name"("giovanni"), "last_name"(X), "age"(1))
         }
