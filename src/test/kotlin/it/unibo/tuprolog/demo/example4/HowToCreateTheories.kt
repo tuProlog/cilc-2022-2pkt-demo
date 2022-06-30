@@ -13,7 +13,8 @@ class HowToCreateTheories {
             nat(s(X)) :- nat(X).
         """.trimIndent())
 
-        println(theory) // IndexedTheory{ nat(z) :- true. nat(s(X_0)) :- nat(X_0) }
+        println(theory)
+        // IndexedTheory{ nat(z) :- true. nat(s(X_0)) :- nat(X_0) }
     }
 
     @Test
@@ -25,6 +26,7 @@ class HowToCreateTheories {
             )
         }
 
-        println(theory) // IndexedTheory{ nat(z) :- true. nat(s(X_0)) :- nat(X_0) }
+        println(theory)
+        // IndexedTheory{ nat(z) :- true. nat(s(X_0)) :- nat(X_0) }
     }
 }

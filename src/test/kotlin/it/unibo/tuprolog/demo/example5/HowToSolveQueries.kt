@@ -12,7 +12,9 @@ class HowToSolveQueries {
 
     @Test
     fun `using Prolog, let's compute all solutions for the N-queens problem`() {
-        val solver = Solver.prolog.solverWithDefaultBuiltins(staticKb = NotableTheories.nQueens)
+        val solver = Solver.prolog.solverWithDefaultBuiltins(
+            staticKb = NotableTheories.nQueens
+        )
         val query = "queens($N, L)".parseAsStruct()
 
         solver.solve(query)
@@ -23,7 +25,9 @@ class HowToSolveQueries {
 
     @Test
     fun `using concurrent LP, let's compute all solutions for the N-queens problem`() {
-        val solver = Solver.concurrent.solverWithDefaultBuiltins(staticKb = NotableTheories.nQueens)
+        val solver = Solver.concurrent.solverWithDefaultBuiltins(
+            staticKb = NotableTheories.nQueens
+        )
         val query = "queens($N, L)".parseAsStruct()
 
         solver.solve(query)

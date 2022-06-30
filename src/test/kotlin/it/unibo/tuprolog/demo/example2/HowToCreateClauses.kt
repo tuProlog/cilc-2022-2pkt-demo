@@ -28,6 +28,6 @@ class HowToCreateClauses {
         val rule = "member(X, [_|T]) :- member(X, T)".parseAsRule()
 
         println(rule)
-        // '+'(1, '*'(2, X_0))
+        // member(X_0, [__0 | T_0]) :- member(X_0, T_0)
     }
 }

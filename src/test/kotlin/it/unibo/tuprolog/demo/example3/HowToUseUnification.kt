@@ -15,8 +15,10 @@ class HowToUseUnification {
         val term1 = "[1, B, c, D]".parseAsTerm()
         val term2 = "[A, b, C, A]".parseAsTerm()
 
-        println(unificator.match(term1, term2)) // true
-        println(unificator.mgu(term1, term2)) // {A_1=1, B_0=b, C_0=c, D_0=1}
+        println(unificator.match(term1, term2))
+        // true
+        println(unificator.mgu(term1, term2))
+        // {A_1=1, B_0=b, C_0=c, D_0=1}
     }
 
     @Test
@@ -28,7 +30,9 @@ class HowToUseUnification {
 
         val rule1 = rule.apply(substitution)
 
-        println(substitution) // {H_0=a, L_0=[b, c], N_0=3}
-        println(rule1) // count([a, b, c], 3) :- (count([b, c], M_0), is(3, '+'(M_0, 1)))
+        println(substitution)
+        // {H_0=a, L_0=[b, c], N_0=3}
+        println(rule1)
+        // count([a, b, c], 3) :- (count([b, c], M_0), is(3, '+'(M_0, 1)))
     }
 }

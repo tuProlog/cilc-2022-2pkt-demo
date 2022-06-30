@@ -70,7 +70,9 @@ class HowToManipulateTheories {
 
         val newTheory = theory.assertA(fact1).assertZ(fact2)
 
-        println(newTheory)
-        // IndexedTheory{ person(giovanni, ciatto, disi) :- true. person(giovanni, sartor, dsg) :- true. person(andrea, omicini, disi) :- true }
+        newTheory.forEach { println(it) }
+        // person(giovanni, ciatto, disi) :- true
+        // person(giovanni, sartor, dsg) :- true
+        // person(andrea, omicini, disi) :- true
     }
 }
