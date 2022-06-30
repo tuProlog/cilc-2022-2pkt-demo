@@ -52,7 +52,7 @@ class HowToExtendSolvers {
         // Yes(query=natural(X_0), substitution={X_0=8})
         // Yes(query=natural(X_0), substitution={X_0=9})
 
-        solver.solve("natural(a)".parseAsStruct()).take(10).forEach { println(it) }
+        solver.solve("natural(a)").take(10).forEach { println(it) }
         // No(query=natural(a))
     }
 
@@ -77,7 +77,7 @@ class HowToExtendSolvers {
         // Yes(query=natural(X_0), substitution={X_0=7})
         // Yes(query=natural(X_0), substitution={X_0=9})
 
-        solver.solve("natural(a)".parseAsStruct()).take(10).forEach { println(it) }
+        solver.solve("natural(a)").take(10).forEach { println(it) }
         // No(query=natural(a))
     }
 }
