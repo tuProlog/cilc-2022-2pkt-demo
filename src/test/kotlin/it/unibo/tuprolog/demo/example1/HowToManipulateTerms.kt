@@ -5,16 +5,9 @@ package it.unibo.tuprolog.demo.example1
 
 
 import it.unibo.tuprolog.core.*
-import it.unibo.tuprolog.core.List
-import it.unibo.tuprolog.core.operators.Operator
 import it.unibo.tuprolog.core.operators.OperatorSet
-import it.unibo.tuprolog.core.operators.Specifier.XFY
-import it.unibo.tuprolog.core.operators.Specifier.YFX
-import it.unibo.tuprolog.core.parsing.TermParser
 import it.unibo.tuprolog.core.parsing.parseAsTerm
-import it.unibo.tuprolog.dsl.prolog
 import kotlin.test.Test
-import it.unibo.tuprolog.core.List.Companion as LogicList
 
 @Suppress("USELESS_IS_CHECK")
 class HowToManipulateTerms {

@@ -4,11 +4,10 @@
 package it.unibo.tuprolog.demo.example2
 
 
-import it.unibo.tuprolog.core.*
-import it.unibo.tuprolog.core.List
-import it.unibo.tuprolog.core.operators.OperatorSet
+import it.unibo.tuprolog.core.Atom
+import it.unibo.tuprolog.core.Integer
+import it.unibo.tuprolog.core.Substitution
 import it.unibo.tuprolog.core.parsing.parseAsRule
-import it.unibo.tuprolog.core.parsing.parseAsTerm
 import kotlin.test.Test
 import it.unibo.tuprolog.core.List.Companion as LogicList
 

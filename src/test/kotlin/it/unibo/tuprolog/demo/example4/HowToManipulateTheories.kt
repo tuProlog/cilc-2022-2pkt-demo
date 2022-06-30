@@ -2,7 +2,7 @@ package it.unibo.tuprolog.demo.example4
 
 import it.unibo.tuprolog.core.parsing.parseAsStruct
 import it.unibo.tuprolog.theory.parsing.parseAsTheory
-import org.junit.Test
+import kotlin.test.Test
 
 class HowToManipulateTheories {
     @Test

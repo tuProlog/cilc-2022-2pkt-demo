@@ -2,7 +2,7 @@ package it.unibo.tuprolog.demo.example4
 
 import it.unibo.tuprolog.dsl.theory.prolog
 import it.unibo.tuprolog.theory.parsing.ClausesParser
-import org.junit.Test
+import kotlin.test.Test
 
 class HowToCreateTheories {
     @Test

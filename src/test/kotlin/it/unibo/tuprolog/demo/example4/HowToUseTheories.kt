@@ -1,7 +1,7 @@
 package it.unibo.tuprolog.demo.example4
 
 import it.unibo.tuprolog.theory.parsing.parseAsTheory
-import org.junit.Test
+import kotlin.test.Test
 
 class HowToUseTheories {
     @Test
