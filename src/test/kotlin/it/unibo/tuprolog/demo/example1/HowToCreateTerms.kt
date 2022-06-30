@@ -72,18 +72,4 @@ class HowToCreateTerms {
         println(list2) // [1, a, f(x)]
         println(list1 == list2) // true
     }
-
-    @Test
-    fun `one may easily access inner properties for terms`() {
-        val person = Struct.of(
-            "giovanni",
-            Struct.of("first_name", Atom.of("Giovanni")),
-            Struct.of("last_name", Var.of("X")),
-            Struct.of("age", Integer.of(1))
-        )
-
-        println(person.functor) // giovanni
-        println(person.arity) // 3
-        println(person.args) // last_name(X_0), age(1)]
-    }
 }

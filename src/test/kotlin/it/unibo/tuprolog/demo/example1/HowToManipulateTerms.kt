@@ -23,7 +23,7 @@ class HowToManipulateTerms {
 
         println(person.functor) // giovanni
         println(person.arity) // 3
-        println(person.args) // last_name(X_0), age(1)]
+        println(person.args) // [first_name('Giovanni'), last_name(X_0), age(1)]
     }
 
     @Test
