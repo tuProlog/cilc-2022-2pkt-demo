@@ -40,3 +40,85 @@ We shall demonstrate "How to do stuff" in 2P-Kt, in particular concerning:
 
 4. resolution
     - e.g. in Prolog, or concurrent LP
+
+### Terms 
+
+#### Creation
+
+![terms can be created via method calls.png](.img/e1-1.png)
+
+![terms can be created via kotlin DSL.png](.img/e1-2.png)
+
+![terms can be parsed from strings.png](.img/e1-3.png)
+
+![handy ways exist for building particular terms such as lists.png](./img/e1-4.png)
+
+#### Manipulation
+
+![one may easily access inner properties for terms.png](./img/e1-5.png)
+
+![one may easily rewrite terms by applying substitutions to variables.png](./img/e1-6.png)
+
+#### Non-trivial usage example
+
+![the first N terms in the Herbrand universe spawned by z|0 and s|1 are the first N Peano numbers.png](./img/e1-7.png)
+
+### Clauses
+
+#### Creation
+
+![clauses can be created via method calls.png](./img/es2-1.png)
+
+![clauses can be parsed from strings.png](./img/es2-2.png)
+
+#### Manipulation
+
+![one may easily access inner properties for clauses.png](./img/es2-3.png)
+
+![one may easily get all the variables in a clause.png](./img/es2-4.png)
+
+![one may rewrite clauses by substitutions application.png](./img/es2-5.png)
+
+### Unification
+
+![one may easily check weather two terms unify or not.png](./img/es3-1.png)
+
+![one may use unification to manipulate terms.png](./img/es3-2.png)
+
+### Theories
+
+#### Creation
+
+![theories may be parsed from strings.png](./img/es4-1.png)
+
+![theories can be created via kotlin DSL.png](./img/es4-2.png)
+
+#### Manipulation
+
+![theories are iterable containers for clauses.png](./img/es4-3.png)
+
+![theories may be queried via unification.png](./img/es4-4.png)
+
+![clauses may be retracted from theory via unification.png](./img/es4-5.png)
+
+![clauses may be asserted into theories.png](./img/es4-6.png)
+
+#### Non-trivial usage example
+
+![propositional theories may be easily converted in relational form.png](./img/es4-7.png)
+
+### Solvers
+
+#### Creation and usage
+
+![using Prolog, let's compute all solutions for the N-queens problem.png](./img/es5-1.png)
+
+![using concurrent LP, let's compute all solutions for the N-queens problem.png](./img/es5-2.png)
+
+#### Extend solvers with primitives
+
+![natural primitive.png](./img/es6-0.png)
+
+![Prolog solvers can be extended with Kotlin functions having a logic API.png](./img/es6-1.png)
+
+![concurrent LP solvers can be extended with Kotlin functions having a logic API.png](./img/es6-2.png)
