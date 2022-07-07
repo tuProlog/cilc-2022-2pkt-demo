@@ -21,5 +21,5 @@ dependencies {
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin", "kotlin-test", "1.7.0")
     // Use the Kotlin JUnit integration.
-    testImplementation("org.jetbrains.kotlin", "kotlin-test-junit", "1.7.0")
+    testImplementation("org.jetbrains.kotlin", "kotlin-test-junit", "1.7.10")
 }
