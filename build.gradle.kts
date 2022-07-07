@@ -13,7 +13,7 @@ dependencies {
     // Align versions of all Kotlin components
     implementation("org.jetbrains.kotlin", "kotlin-bom", "1.7.0")
     // Use the Kotlin JDK 8 standard library.
-    implementation("org.jetbrains.kotlin", "kotlin-stdlib-jdk8", "1.7.0")
+    implementation("org.jetbrains.kotlin", "kotlin-stdlib-jdk8", "1.7.10")
 
     // Import all 2P-Kt modules
     implementation("it.unibo.tuprolog", "full-jvm", "0.20.9")
