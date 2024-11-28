@@ -11,7 +11,7 @@ allprojects {
 
 dependencies {
     // Align versions of all Kotlin components
-    implementation("org.jetbrains.kotlin", "kotlin-bom", "2.0.21")
+    implementation("org.jetbrains.kotlin", "kotlin-bom", "2.1.0")
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin", "kotlin-stdlib-jdk8", "2.1.0")
 
