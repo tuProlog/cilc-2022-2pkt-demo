@@ -19,7 +19,7 @@ dependencies {
     implementation("it.unibo.tuprolog", "full-jvm", "0.20.9")
 
     // Use the Kotlin test library.
-    testImplementation("org.jetbrains.kotlin", "kotlin-test", "2.0.21")
+    testImplementation("org.jetbrains.kotlin", "kotlin-test", "2.1.0")
     // Use the Kotlin JUnit integration.
-    testImplementation("org.jetbrains.kotlin", "kotlin-test-junit", "2.0.21")
+    testImplementation("org.jetbrains.kotlin", "kotlin-test-junit", "2.1.0")
 }
