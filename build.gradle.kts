@@ -16,7 +16,7 @@ dependencies {
     implementation("org.jetbrains.kotlin", "kotlin-stdlib-jdk8", "2.3.10")
 
     // Import all 2P-Kt modules
-    implementation("it.unibo.tuprolog", "full-jvm", "0.20.9")
+    implementation("it.unibo.tuprolog", "full-jvm", "1.1.5")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin", "kotlin-test", "2.3.10")
